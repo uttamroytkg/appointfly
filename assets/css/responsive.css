@@ -1,0 +1,162 @@
+@media all and (max-width:1200px){
+	.menu-container{
+		padding: 0 2rem;
+	}
+}
+
+
+
+@media all and (max-width:991px){
+	.header-button i.menu-i{
+		display: block;
+	}
+	.header-top-area{
+		position: relative;
+	}
+	.toggle-menu{
+		position: absolute;
+		left: 0;
+		top: 100%;
+		height: auto;
+		width: 100%;
+		background: #3f3b7d;
+		padding: 1.5rem;
+		display: none;
+	}
+	.menu ul{
+		flex-direction: column;
+	}
+	.menu ul li a{
+		display: block;
+		padding: .7rem;
+		color: white;
+	}
+	.banner-left{
+		margin-bottom: 5rem;
+	}
+	.banner-right{
+		text-align: center;
+	}
+	.social-icon {
+		text-align: center;
+		margin-top: 2rem;
+	}
+	.apps-carousel .owl-nav .owl-prev {
+		left: -3rem;
+	}
+	.apps-carousel .owl-nav .owl-next {
+		right: -3rem;
+	}
+	.pricing-area{
+		overflow: auto;
+		height: 350px;
+	}
+}
+
+
+
+@media all and (max-width:767px){
+	h2{
+		font-size: 4rem;
+	}
+	.banner-left h1 {
+		font-size: 5.5rem;
+	}
+	.payments-area .banner-left h2{
+		font-size: 5.5rem;
+	}
+	.passion-single-row:nth-child(2n) .passion-image {
+		text-align: center;
+		margin-top: 2rem;
+	}
+	.passion-single-row:nth-child(2n+1){
+		flex-direction: column-reverse;
+	}
+	.passion-single-row:nth-child(2n+1) .passion-content {
+		float: inherit;
+		margin-bottom: 4rem;
+	}
+	.passion-image {
+		text-align: center;
+	}
+	.mixitup-controls ul li{
+		border: .2rem solid #345DEE !important;
+		border-radius: .8rem !important;
+		margin: 0 .5rem 2rem .5rem;
+	}
+	.contact-links{
+		float: inherit;
+		margin-top: 5rem;
+	}
+}
+
+
+
+
+@media all and (max-width:575px){
+	.single-footer-item h3{
+		margin-top: 3rem;
+	}
+	.banner-left h1 {
+		font-size: 5rem;
+	}
+	.payments-area .banner-left h2{
+		font-size: 5rem;
+	}
+	h2{
+		font-size: 3.5rem;
+	}
+	.footer-area{
+		text-align: center;
+	}
+	.apps-carousel .owl-nav .owl-prev {
+		left: 0rem;
+	}
+	.apps-carousel .owl-nav .owl-next {
+		right: 0rem;
+	}
+}
+
+
+
+
+@media all and (max-width:485px){
+	/*button css*/
+	.header-button a{
+		display: none;
+	}
+	.header-menu-button{
+		display: flex block;
+		justify-content: center;
+		margin-top: 2rem;
+	}
+	.header-menu-button a{
+		display: block !important;
+		color: white;
+	}
+	/*button css*/
+
+	.menu ul li{
+		width: 100%;
+		text-align: center;
+	}
+	.banner-left h1 {
+		font-size: 4rem;
+	}
+	.payments-area .banner-left h2{
+		font-size: 4rem;
+	}
+	.subscribe-form form{
+		flex-direction: column;
+	}
+	.subscribe-form input[type="email"]{
+		margin-bottom: 2rem;
+		max-width: 100%;
+	}
+	.subscribe-form input[type="submit"]{
+		max-width: inherit;
+	}
+	.footer-bottom p{
+		text-align: center;
+	}
+}
