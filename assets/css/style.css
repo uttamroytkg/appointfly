@@ -1,0 +1,876 @@
+/*
+Templeate Name: AppointFly.
+Templeate URI: ...
+Author: Uttam Roy.
+Author URL: ...
+Description: This is Test Business Website.
+Tags: Business website,HTML template.
+Version: 1.0.0
+
+
+
+
+Table of Content
+================
+** Import CSS Files **
+** Default CSS **
+
+
+
+
+  ***************
+ ** HOME PAGE **
+***************
+1: Header Top Area
+2: Banner Area
+3: Passion Area
+4: Team Members Area
+5: Connect App Area
+6: Payment Area
+7: Footer Area
+
+
+
+
+  ******************
+ ** PRICING PAGE **
+******************
+1: Pricing Area
+2: Asked Area
+
+
+
+
+  *********************
+ ** INDUSTRIES PAGE **
+*********************
+1: Industries Area 
+
+
+
+
+  ***********************
+ ** INTEGRATIONS PAGE **
+***********************
+1: Asked Area
+
+
+
+
+  ******************
+ ** CONTACT PAGE **
+******************
+1: Contact Area
+
+
+
+
+  ****************
+ ** ABOUT PAGE **
+****************
+1: Contact Area
+
+*/
+
+
+
+/** Import Fonts CSS **/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+/* font-family: 'Inter', sans-serif; */
+
+
+
+
+  /*****************/
+ /** Default CSS **/
+/*****************/
+html{
+	font-size: 62.5%;
+}
+body{
+	font-family: 'Inter', sans-serif;
+	font-size: 1.6rem;
+	font-weight: 400;
+	overflow-x: hidden;
+}
+img{
+	max-width: 100%;
+}
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: inherit;
+}
+h2 {
+	font-weight: 600;
+	font-size: 5.8rem;
+	line-height: 6rem;
+}
+h3{
+	font-weight: 600;
+	font-size: 3.5rem;
+}
+h4{
+	color: #EE3465;
+	font-weight: 600;
+	font-size: 1.6rem;
+}
+p{
+	color: #696969;
+}
+
+
+
+
+  /************************/
+ /** 1: Header Top Area **/
+/************************/
+.logo img{
+	max-height: 3.4rem;
+	height: 100%;
+	width: auto;
+}
+.header-top-area{
+	padding: 4rem 0;
+}
+
+/* Menu Css*/
+.menu ul{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+.menu ul li{
+	padding: 0 1.5rem;
+}
+.menu ul li a{
+	display: inline-block;
+	color: #000;
+	font-weight: 600;
+	text-transform: capitalize;
+	transition: .5s;
+}
+.menu ul li a:hover,
+.menu ul li.active a{
+	color: #345DEE;
+}
+
+/* Header Button Css*/
+.header-button{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+.header-button a{
+	display: inline-block;
+	color: #18214D;
+	font-weight: 600;
+	text-transform: capitalize;
+	padding: .8rem 1.2rem;
+	border-radius: 1rem;
+	transition: .5s; 
+}
+.header-button a:not(:first-child){
+	margin-left: 2rem;
+}
+.header-button a:hover,
+.header-button a.active,
+.header-button i:hover{
+	background-color: #345DEE;
+	color: white;
+}
+.header-button i{
+	color: #18214D;
+	font-weight: 600;
+	border-radius: 1rem;
+	margin-left: 2rem;
+	transition: .5s;
+	font-size: 2.3rem;
+	border: .1rem solid #18214D;
+	cursor: pointer;
+	display: none;
+}
+.menu-i{
+	padding: .8rem .9rem;
+}
+.crose-i{
+	padding: .8rem 1.3rem;
+}
+.header-menu-button{
+	display: none;
+}
+.header-menu-button a{
+	display: none;
+}
+
+
+/*Menu fixed Class*/
+.menu-fixed{
+	position: fixed !important;
+	left: 0;
+	width: 100%;
+	background: #EFF2F6;
+	z-index: 3;
+	box-shadow: 0 0 1rem rgba(0, 0, 0, .5);
+	padding: 2rem 0;
+	animation: menu 1s linear;
+}
+@keyframes menu{
+	0%{
+		top: -30%;
+	}
+	100%{
+		top: 0;
+	}
+}
+
+
+
+
+  /********************/
+ /** 2: Banner Area **/
+/********************/
+.header-banner-area{
+	padding-top: 2rem;
+	padding-bottom: 8rem;
+}
+.banner-left{
+	max-width: 50rem;
+}
+.banner-left h1{
+	font-size: 7.2rem;
+	font-weight: 700;
+	line-height: 8rem;
+	margin-bottom: 2rem;
+}
+.banner-left > p{
+	font-size: 1.8rem;
+	margin-bottom: 2rem;
+}
+.subscribe-form form{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.subscribe-form p{
+	font-size: 1.5rem;
+	margin: 1rem 0;
+}
+.subscribe-form input[type="email"]{
+	font-weight: 600;
+	font-size: 1.8rem;
+	border-radius: .8rem;
+	border: none;
+	background: #EFF2F6;
+	max-width:calc(70% - 10px);
+	flex: 0 0 100%;
+	padding: 1.2rem;
+}
+.subscribe-form input[type="submit"]{
+	font-weight: 600;
+	font-size: 1.8rem;
+	border-radius: .8rem;
+	border: none;
+	background: #345DEE;
+	max-width:30%;
+	flex: 0 0 100%;
+	padding: 1.2rem;
+	color: white;
+	transition: .5s;
+}
+.subscribe-form input[type="submit"]:hover{
+	background: #113BCE;
+}
+.subscribe-form input[type="email"]::placeholder{
+	opacity: 1;
+}
+.subscribe-form input[type="email"]:focus{
+	outline: none;
+}
+.banner-right{
+	text-align: right;
+}
+.banner-right img{
+	max-width: 70%;
+}
+
+
+
+
+  /*********************/
+ /** 3: Passion Area **/
+/*********************/
+.section-title{
+	padding: 5rem;
+}
+.section-title h2{
+	max-width: 73rem;
+	margin: auto;
+	margin-bottom: 2rem;
+	text-align: center;
+}
+.section-title p{
+	max-width: 55rem;
+	margin: auto;
+	text-align: center;
+}
+.passion-single-row{
+	padding: 5rem 0;
+}
+.passion-content{
+	max-width: 45rem;
+}
+.passion-content h3{
+	margin-bottom: 1rem;
+}
+.passion-content p{
+	max-width: 38rem;
+}
+.passion-image img{
+	max-width: 70%;
+}
+.passion-single-row:nth-child(even) .passion-image{
+	text-align: right;
+}
+.passion-single-row:nth-child(odd) .passion-content{
+	float: right;
+}
+.passion-content a{
+	font-size: 1.4rem;
+	font-weight: 600;
+	display: inline-flex;
+	align-items: center;
+	position: relative;
+	margin-top: .5rem;
+}
+.passion-content a i{
+	font-size: 3rem;
+	color: #345DEE;
+	padding-right: .5rem;
+}
+.passion-content a:after{
+	position: absolute;
+	content: "";
+	height: .2rem;
+	width: calc(100% - 35px);
+	background: black;
+	right: 0;
+	bottom: 2px;
+}
+
+
+
+
+  /**************************/
+ /** 4: Team Members Area **/
+/**************************/
+.team-members-area{
+	padding: 7rem 0;
+}
+.team-members{
+	padding-bottom: 6rem;
+}
+.single-member{
+	padding: 2rem;
+	border: .1rem solid rgba(24, 33, 77, .5);
+	border-radius: .8rem;
+}
+.team-image img{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	border-radius: .8rem;
+}
+.single-member p{
+	text-align: center;
+	margin-top: 3rem;
+	font-weight: 600;
+	font-size: 1.8rem;
+	color: #18214D;
+}
+.team-see-more{
+	margin: auto;
+}
+.team-see-more a{
+	font-size: 1.4rem;
+	font-weight: 600;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.team-see-more a i{
+	font-size: 2.5rem;
+	margin-left: .5rem;
+	color: #ccc;
+	background: black;
+	border-radius: 50%;
+}
+.team-image{
+	position: relative;
+}
+.team-image:after{
+	position: absolute;
+	content: "";
+	height: 100%;
+	width: 100%;
+	left: 0;
+	top: 0;
+	transform: scale(1.0);
+	border-radius: .8rem;
+	background: rgba(10, 93, 255, 0.5);
+	transition: .7s ease-in;
+}
+.team-image:hover.team-image:after{
+	transform: scale(0);
+	border-radius: 50%;
+}
+
+
+
+
+  /*************************/
+ /** 5: Connect App Area **/
+/*************************/
+.connect-area{
+	padding: 3rem 0 10rem 0;
+}
+.connect-area .section-title h2{
+	max-width: 100%;
+}
+.apps-carousel{
+	max-width: 90rem;
+	margin: auto;
+	position: relative;
+}
+.single-apps img{
+	max-width: 11.5rem;
+	margin: auto;
+	height: auto;
+}
+.single-apps{
+	display: flex;
+	height: 4.5rem;
+	align-items: center;
+	justify-content: center;
+}
+.apps-carousel .owl-nav .owl-prev,
+.apps-carousel .owl-nav .owl-next{
+	height: 4rem;
+	width: 4rem;
+	border-radius: 50%;
+	background: #EFF2F6 !important;
+	text-align: center;
+	position: absolute;
+	transform: translateY(-50%);
+	transition: .5s;
+}
+.apps-carousel .owl-nav .owl-prev:hover, 
+.apps-carousel .owl-nav .owl-next:hover{
+	background: #345DEE !important;
+	color: #FFF;
+}
+.apps-carousel .owl-nav .owl-prev{
+	left: -5rem;
+	bottom: .7rem;
+} 
+.apps-carousel .owl-nav .owl-next{
+	right: -5rem;
+	bottom: .7rem;
+}
+
+
+
+
+  /*********************/
+ /** 6: Payment Area **/
+/*********************/
+.banner-left a{
+	color: white;
+	font-size: 1.8rem;
+	font-weight: 600;
+	padding: 1.5rem 3rem;
+	background: #345DEE;
+	border-radius: .8rem;
+	display: inline-block;
+	margin: 1rem 0 2rem 0;
+	transition: .5s;
+}
+.banner-left a:hover{
+	background: #113BCE;
+}
+.banner-left .small{
+	font-size: 1.5rem;
+}
+.payments-area .banner-left h2{
+	font-size: 7.2rem;
+	font-weight: 700;
+	line-height: 8rem;
+	margin-bottom: 2rem;
+}
+
+
+
+
+  /********************/
+ /** 7: Footer Area **/
+/********************/
+.footer-area{
+	padding: 5rem 0 3rem 0;
+}
+.my-10{
+	margin-top: 3.2rem;
+}
+.my-11{
+	margin-top: 6rem;
+}
+.single-footer-item h4{
+	color: black;
+}
+.single-footer-item a{
+	line-height: 3rem;
+	color: #696969;
+}
+.single-footer-item a:hover,
+.single-footer-item a.active{
+ color: #345DEE;
+}
+.single-footer-item h3{
+	font-size: 1.8rem;
+	font-weight: 700;
+	margin-bottom: 1rem;
+}
+
+/*Footer Bottom Css*/
+.social-icon{
+	text-align: right;
+}
+.social-icon a i{
+	font-size: 2rem;
+	background: #EFF2F6;
+	height: 5rem;
+	width: 5rem;
+	line-height: 5rem;
+	text-align: center;
+	border-radius: 50%;
+	margin: .5rem;
+	transition: .5s;
+}
+.social-icon a i:hover{
+	background: #345DEE;
+	color: white;
+}
+.footer-bottom{
+	border-top: .1rem solid #D0D2D5;
+	padding: 3rem 0;
+}
+.footer-bottom p{
+	color: black;
+}
+
+
+
+
+  /******************/
+ /** PRICING PAGE **/
+/******************/
+  /*********************/
+ /** 1: Pricing Area **/
+/*********************/
+.list-items .switch{
+	margin-bottom: 10rem;
+}
+.list-items .switch .form-switch {
+	height: 10rem;
+	display: flex;
+	margin: 0;
+	padding: 0;
+	justify-content: space-between;
+	width: 16rem;
+	align-items: center;
+	padding-top: 4rem;
+}
+.switch label{
+	color: black;
+}
+.form-switch .form-check-input {
+	 margin:0; 
+	 width: 4.5rem;
+	 height: 2.4rem;
+}
+.list-items ul{
+	margin-bottom: 2rem;
+}
+.list-items ul li i{
+	color: gray;
+	line-height: 4rem;
+}
+.list-items h4{
+	font-size: 2rem;
+	color: black;
+}
+.list-items h4:nth-of-type(1){
+	margin-bottom: 1rem;
+}
+
+.form-check-input:checked {
+	background-color: ;
+	border-color: red;
+}
+.list-h{
+	text-align: center;
+}
+.list-items-color{
+	background: #EFF2F6;
+	padding: 4rem;
+	text-align: center;
+	border-radius: .8rem;
+}
+.list-items-color a{
+	text-decoration: none;
+	display: inline-block;
+	padding: 1rem 6rem;
+	background: #345DEE;
+	color: white;
+	font-weight: 600;
+	border-radius: .8rem;
+	transition: .5s;
+}
+.list-items-color a.btn1{
+	margin-top: 5rem;
+}
+.list-items-color a.btn2{
+	margin-top: 2rem;
+}
+.list-items-color a:hover{
+	background: #113BCE;
+}
+.list-items-color ul li,
+.list-items-color ul li i{
+	color: black;
+}
+.list-area{
+	min-width: 920px;
+}
+
+
+
+
+  /*******************/
+ /** 2: Asked Area **/
+/*******************/
+.accordion-button::after{
+	background-image: url(../images/pricing/plus.svg);
+	height: 2.5rem;
+	width: 2.5rem;
+	background-size: cover;
+}
+.accordion-button:not(.collapsed)::after{
+	background-image: url(../images/pricing/remove.svg);
+}
+.accordion-item:nth-of-type(1){
+	border-top: .1rem solid #ddd !important;
+}
+.accordion-item:nth-of-type(5){
+	border-bottom: .1rem solid #ddd !important;
+	margin-bottom: 5rem;
+}
+.accordion-header span{
+	font-size: 1.8rem;
+	font-weight: 600;
+	color: black;
+}
+.accordion-button{
+	padding: 0 1.25rem;
+}
+.accordion-body {
+	color: #696969;
+}
+
+
+
+
+  /*********************/
+ /** INDUSTRIES PAGE **/
+/*********************/
+  /************************/
+ /** 1: Industries Area **/
+/************************/
+.mixitup-controls{
+	margin: 4rem 0;
+}
+.mixitup-controls ul{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.mixitup-controls ul li{
+	padding: .8rem 3rem;
+	border: .2rem solid #345DEE;
+	color: #345DEE;
+	font-weight: 600;
+	transition: .5s;
+}
+.mixitup-control-active{
+	color: white !important;
+	background: #345DEE;
+}
+.mixitup-controls ul li:hover {
+	color: white !important;
+	background: #01249F;
+}
+.mixitup-controls ul li:not(:last-child){
+	border-right: inherit;
+}
+.mixitup-controls ul li:first-child{
+	border-radius: .8rem 0 0 .8rem;
+}
+.mixitup-controls ul li:last-child{
+	border-radius: 0 .8rem .8rem 0;
+}
+.industries-area{
+	padding-bottom: 5rem;
+}
+
+
+
+
+  /***********************/
+ /** INTEGRATIONS PAGE **/
+/***********************/
+  /*******************/
+ /** 1: Asked Area **/
+/*******************/
+.title-border h2{
+	border-bottom: .3rem solid black;
+	max-width: 78rem;
+}
+
+
+
+
+  /******************/
+ /** CONTACT PAGE **/
+/******************/
+  /*********************/
+ /** 1: Contact Area **/
+/*********************/
+.contact-area{
+	padding: 5rem 0;
+}
+.contact-area p{
+	max-width: 50rem;
+}
+.form-input{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 2rem 0;
+}
+.form-input input{
+	max-width: calc(50% - 7px);
+	flex: 0 0 calc(50% - 7px);
+	padding: 1.5rem;
+	border-radius: .8rem;
+	border: none;
+	background: #EFF2F6;
+}
+.contact-area textarea{
+	max-width: 100%;
+	width: 100%;
+	border-radius: .8rem;
+	border: none;
+	background: #EFF2F6;
+	max-height: 14rem;
+	margin-bottom: 2rem;
+	padding: 1.5rem;
+}
+.form-input input::placeholder,
+.contact-area textarea::placeholder{
+	opacity: 1;
+}
+.form-input input:focus,
+.contact-area textarea:focus{
+	outline: none;
+}
+.contact-area input[type=submit]{
+	padding: 1.5rem;
+	max-width: 50%;
+	width: 100%;
+	background: #345DEE;
+	border-radius: .8rem;
+	border: none;
+	color: white;
+}
+.contact-links{
+	float: right;
+}
+.contact-links .social-icon{
+	display: flex;
+}
+.contact-links .social-icon a i{
+	margin: 2rem 1rem 0 0;
+}
+.contact-links h4{
+	color: black;
+	font-size: 2rem;
+}
+.contact-links p{
+	font-size: 1.4rem;
+	line-height: 1rem;
+}
+.contact-links a{
+	font-size: 1.8rem;
+	font-weight: 600;
+	margin-bottom: 2.5rem;
+	display: inline-block;
+}
+
+
+
+
+  /****************/
+ /** ABOUT PAGE **/
+/****************/
+  /*********************/
+ /** 1: Contact Area **/
+/*********************/
+.pragraph-area{
+	max-width: 41rem;
+}
+.pragraph-p{
+	margin-bottom: 3rem;
+}
+.pragraph-p p{
+	display: inline;
+	border-bottom: .1rem solid black;
+	color: black;
+}
+
+
+/*Scroll Buttom Css*/
+#scrollBtn{
+	position: fixed;
+	font-size: 3.5rem;
+	right: 1rem;
+	bottom: 1rem;
+	cursor: pointer;
+	display: none;
+	color: #345DEE;
+	transition: .5s;
+	animation: click 3s infinite;
+}
+@keyframes click {
+  0%   {bottom: 1rem;}
+  50%  {bottom: 3rem;}
+  100% {bottom: 1rem;}
+}
+#scrollBtn:hover{
+	color: #113BCE;
+}
+/*Scroll Buttom Css*/
